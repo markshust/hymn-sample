@@ -3,6 +3,9 @@
     "airbnb",
     "plugin:meteor/recommended"
   ],
+  "globals": {
+    "window": true
+  },
   "parser": "babel-eslint",
   "plugins": [
     "meteor"
