@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:meteor/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "meteor"
+  ],
+  "rules": {
+    "import/extensions": [2, { "js": "always" }],
+    "import/no-extraneous-dependencies": [0],
+    "react/require-extension": [0]
+  },
+  "settings": {
+    "import/resolver": "meteor"
+  }
+}
