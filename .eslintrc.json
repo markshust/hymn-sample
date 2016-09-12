@@ -8,7 +8,7 @@
     "meteor"
   ],
   "rules": {
-    "import/extensions": [2, { "js": "always" }],
+    "import/extensions": [2, { "js": "never" }],
     "import/no-extraneous-dependencies": [0],
     "react/require-extension": [0]
   },
