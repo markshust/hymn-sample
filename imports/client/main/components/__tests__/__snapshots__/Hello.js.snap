@@ -1,0 +1,27 @@
+exports[`<Hello /> renders correctly 1`] = `
+<div>
+  <button
+    onClick={[Function onClick]}>
+    Click Me
+  </button>
+  <p>
+    You\'ve pressed the button 
+    0
+     times.
+  </p>
+</div>
+`;
+
+exports[`<Hello /> renders incremented value 1`] = `
+<div>
+  <button
+    onClick={[Function onClick]}>
+    Click Me
+  </button>
+  <p>
+    You\'ve pressed the button 
+    1
+     times.
+  </p>
+</div>
+`;

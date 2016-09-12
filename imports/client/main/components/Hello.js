@@ -1,17 +1,21 @@
 import React, { PropTypes } from 'react';
+import Button from './Button';
 
 const Hello = ({
   counter,
   onClick,
 }) => (
   <div>
-    <button onClick={onClick}>Click Me</button>
+    <Button
+      label="Click Me"
+      onClick={onClick}
+    />
     <p>You've pressed the button {counter} times.</p>
   </div>
 );
 
 Hello.propTypes = {
-  counter: PropTypes.number,
+  counter: PropTypes.number.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 

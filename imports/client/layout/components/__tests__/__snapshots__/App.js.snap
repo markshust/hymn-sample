@@ -1,0 +1,7 @@
+exports[`<App /> renders correctly 1`] = `
+<div>
+  <div>
+    Test
+  </div>
+</div>
+`;
