@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import Button from '/imports/client/core/components/Button';
+import Button from 'client/core/components/Button';
 
 const Hello = ({
   counter,

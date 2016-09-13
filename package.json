@@ -12,6 +12,15 @@
   "main": "server/index.js",
   "browser": "client/index.js",
   "jest": {
+    "moduleNameMapper": {
+      "^client": "<rootDir>/imports/client",
+      "^server": "<rootDir>/imports/server",
+      "^utils": "<rootDir>/imports/utils"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.meteor/"
+    ],
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(js|json|node)|(test\\.js)$"
   },
   "dependencies": {
@@ -42,7 +51,6 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "babel-preset-stage-1": "^6.13.0",
-    "babel-root-slash-import": "^1.1.0",
     "css-loader": "^0.23.0",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",

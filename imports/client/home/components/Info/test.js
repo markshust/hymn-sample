@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderCheck } from '/imports/utils/testChecks';
+import { renderCheck } from 'utils/testChecks';
 import Info from './Info';
 
 describe('<Info />', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderCheck } from '/imports/utils/testChecks';
+import { renderCheck } from 'utils/testChecks';
 import Button from './Button';
 
 const onClick = jest.fn();

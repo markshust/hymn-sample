@@ -1,6 +1,6 @@
 import React from 'react';
 import find from 'lodash/find';
-import { componentCheck, renderCheck } from '/imports/utils/testChecks';
+import { componentCheck, renderCheck } from 'utils/testChecks';
 import Hello from './Hello';
 
 describe('Container(<Hello />)', () => {
