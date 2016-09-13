@@ -1,7 +1,7 @@
 exports[`<Hello /> renders correctly 1`] = `
 <div>
   <button
-    onClick={[Function onClick]}>
+    onClick={[Function anonymous]}>
     Click Me
   </button>
   <p>
@@ -15,7 +15,7 @@ exports[`<Hello /> renders correctly 1`] = `
 exports[`<Hello /> renders incremented value 1`] = `
 <div>
   <button
-    onClick={[Function onClick]}>
+    onClick={[Function anonymous]}>
     Click Me
   </button>
   <p>
