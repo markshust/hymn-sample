@@ -2,10 +2,12 @@
   "name": "hymn-sample",
   "private": true,
   "scripts": {
+    "build-storybook": "build-storybook",
     "lint": "./node_modules/eslint/bin/eslint.js .",
     "start": "meteor run",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test": "./node_modules/jest/bin/jest.js",
+    "test-watch": "./node_modules/jest/bin/jest.js --watch"
   },
   "main": "server/index.js",
   "browser": "client/index.js",

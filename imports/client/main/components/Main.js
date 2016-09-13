@@ -3,19 +3,13 @@ import Hello from './Hello';
 import Info from './Info';
 
 class Main extends Component {
-  constructor(props) {
-    super(props);
+  state = {
+    counter: 0,
+  };
 
-    this.state = {
-      counter: 0,
-    };
-
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
+  handleClick = () => {
     this.setState({ counter: this.state.counter + 1 });
-  }
+  };
 
   render() {
     return (

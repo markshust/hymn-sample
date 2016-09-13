@@ -5,7 +5,7 @@ exports[`<Main /> renders correctly 1`] = `
   </h1>
   <div>
     <button
-      onClick={[Function bound handleClick]}>
+      onClick={[Function anonymous]}>
       Click Me
     </button>
     <p>
