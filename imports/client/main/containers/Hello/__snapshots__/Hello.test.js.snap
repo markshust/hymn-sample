@@ -1,4 +1,4 @@
-exports[`<Hello /> updates counter 1`] = `
+exports[`Container(<Hello />) updates counter 1`] = `
 <div>
   <button
     onClick={[Function onClick]}>
@@ -12,7 +12,7 @@ exports[`<Hello /> updates counter 1`] = `
 </div>
 `;
 
-exports[`<Hello /> updates counter 2`] = `
+exports[`Container(<Hello />) updates counter 2`] = `
 <div>
   <button
     onClick={[Function onClick]}>
