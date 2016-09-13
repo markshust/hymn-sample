@@ -1,11 +1,9 @@
 import React from 'react';
-import TestUtils from 'react-addons-test-utils';
+import { snap } from '/imports/utils/testUtils';
 import Main from '../Main';
 
 describe('<Main />', () => {
-  it('renders with default state', () => {
-    const component = TestUtils.renderIntoDocument(<Main />);
-
-    expect(component.state.counter).toEqual(0);
+  it('renders correctly', () => {
+    snap(<Main />);
   });
 });
