@@ -1,7 +1,7 @@
 import { configure, addDecorator } from '@kadira/storybook';
 import { withKnobs } from '@kadira/storybook-addon-knobs';
 
-const req = require.context('../imports/client', true, /.*\.story.js/);
+const req = require.context('../imports/client', true, /story.js/);
 
 const loadStories = () => {
   req.keys().forEach(filename => req(filename));

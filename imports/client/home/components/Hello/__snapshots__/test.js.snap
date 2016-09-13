@@ -1,0 +1,13 @@
+exports[`<Hello /> renders correctly 1`] = `
+<div>
+  <button
+    onClick={[Function anonymous]}>
+    Click Me
+  </button>
+  <p>
+    You\'ve pressed the button 
+    0
+     times.
+  </p>
+</div>
+`;
