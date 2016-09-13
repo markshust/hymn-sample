@@ -1,7 +1,7 @@
-exports[`<Hello /> renders correctly 1`] = `
+exports[`<Hello /> updates counter 1`] = `
 <div>
   <button
-    onClick={[Function anonymous]}>
+    onClick={[Function onClick]}>
     Click Me
   </button>
   <p>
@@ -12,10 +12,10 @@ exports[`<Hello /> renders correctly 1`] = `
 </div>
 `;
 
-exports[`<Hello /> renders incremented value 1`] = `
+exports[`<Hello /> updates counter 2`] = `
 <div>
   <button
-    onClick={[Function anonymous]}>
+    onClick={[Function onClick]}>
     Click Me
   </button>
   <p>

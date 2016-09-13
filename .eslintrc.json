@@ -17,6 +17,7 @@
   "rules": {
     "import/extensions": [2, { "js": "never" }],
     "import/no-extraneous-dependencies": [0],
+    "import/no-named-as-default": [0],
     "react/jsx-filename-extension": [0],
     "react/require-extension": [0]
   },

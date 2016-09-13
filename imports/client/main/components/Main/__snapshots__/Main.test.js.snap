@@ -5,11 +5,11 @@ exports[`<Main /> renders correctly 1`] = `
   </h1>
   <div>
     <button
-      onClick={[Function anonymous]}>
+      onClick={[Function onClick]}>
       Click Me
     </button>
     <p>
-      You\'ve pressed the button 
+      You've pressed the button 
       0
        times.
     </p>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { pure } from 'recompose';
 
 const Info = () => (
   <div>
@@ -12,4 +13,4 @@ const Info = () => (
   </div>
 );
 
-export default Info;
+export default pure(Info);

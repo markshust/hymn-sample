@@ -1,7 +1,6 @@
 import renderer from 'react-test-renderer';
 
-const snap = (children) => {
-  const component = renderer.create(children);
+const componentCheck = (component) => {
   const tree = component.toJSON();
 
   expect(tree).toMatchSnapshot();
@@ -12,6 +11,14 @@ const snap = (children) => {
   };
 };
 
+const renderCheck = (children) => {
+  const component = renderer.create(children);
+
+  return componentCheck(component);
+};
+
+
 export {
-  snap, // eslint-disable-line import/prefer-default-export
+  componentCheck,
+  renderCheck,
 };
