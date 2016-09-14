@@ -17,7 +17,6 @@ const renderCheck = (children) => {
   return componentCheck(component);
 };
 
-
 export {
   componentCheck,
   renderCheck,
