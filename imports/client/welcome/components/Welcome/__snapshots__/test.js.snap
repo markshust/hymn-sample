@@ -1,0 +1,57 @@
+exports[`<Welcome /> renders correctly 1`] = `
+<div>
+  <h1>
+    Welcome to Meteor!
+  </h1>
+  <div>
+    <button
+      onClick={[Function onClick]}>
+      Click Me
+    </button>
+    <p>
+      You\'ve pressed the button 
+      0
+       times.
+    </p>
+  </div>
+  <div>
+    <h2>
+      Learn Meteor!
+    </h2>
+    <ul>
+      <li>
+        <a
+          href="https://www.meteor.com/try"
+          rel="noopener noreferrer"
+          target="_blank">
+          Do the Tutorial
+        </a>
+      </li>
+      <li>
+        <a
+          href="http://guide.meteor.com"
+          rel="noopener noreferrer"
+          target="_blank">
+          Follow the Guide
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://docs.meteor.com"
+          rel="noopener noreferrer"
+          target="_blank">
+          Read the Docs
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://forums.meteor.com"
+          rel="noopener noreferrer"
+          target="_blank">
+          Discussions
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
