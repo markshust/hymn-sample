@@ -9,6 +9,7 @@ const Home = () => (
     <h1>Home</h1>
     <nav>
       <Link to="/welcome" style={styles.link}>Welcome to Meteor</Link>
+      <Link to="/todos" style={styles.link}>Todos</Link>
     </nav>
   </div>
 );

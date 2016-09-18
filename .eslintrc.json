@@ -18,8 +18,11 @@
     "import/extensions": [2, { "js": "never" }],
     "import/no-extraneous-dependencies": [0],
     "import/no-named-as-default": [0],
+    "jsx-a11y/href-no-hash": [0],
+    "jsx-a11y/no-static-element-interactions": [0],
     "react/forbid-prop-types": [2, { "forbid": ["any"] }],
     "react/jsx-filename-extension": [0],
+    "react/no-unused-prop-types": [0],
     "react/require-extension": [0]
   },
   "settings": {

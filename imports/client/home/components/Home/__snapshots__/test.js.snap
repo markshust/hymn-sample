@@ -13,6 +13,15 @@ exports[`<Home /> renders correctly 1`] = `
       }>
       Welcome to Meteor
     </a>
+    <a
+      onClick={[Function bound handleClick]}
+      style={
+        Object {
+          "display": "block"
+        }
+      }>
+      Todos
+    </a>
   </nav>
 </div>
 `;
