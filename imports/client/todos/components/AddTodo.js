@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { compose, withHandlers } from 'recompose';
 import { connect } from 'react-redux';
-import { add } from '../actions';
+import { todosAdd } from '../actions';
 
 let input;
 
@@ -31,7 +31,7 @@ const enhance = compose(
       e.preventDefault();
 
       if (input.value.trim()) {
-        dispatch(add(input.value));
+        dispatch(todosAdd(input.value));
         input.value = '';
       }
     },

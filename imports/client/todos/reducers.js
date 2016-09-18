@@ -1,48 +1,33 @@
+import { handleActions } from 'redux-actions';
 import * as actionTypes from './actionTypes';
 
-const todo = (state, action) => {
-  switch (action.type) {
-    case actionTypes.ADD:
-      return {
-        id: action.payload.id,
-        text: action.payload.text,
-        completed: false,
-      };
-    case actionTypes.TOGGLE:
-      if (state.id !== action.payload) {
-        return state;
-      }
-      return {
+const todo = handleActions({
+  [actionTypes.ADD]: (state, action) => ({
+    id: action.payload.id,
+    text: action.payload.text,
+    completed: false,
+  }),
+  [actionTypes.TOGGLE]: (state, action) => (
+    state.id !== action.payload.id
+      ? state
+      : {
         ...state,
         completed: !state.completed,
-      };
-    default:
-      return state;
-  }
-};
+      }
+  ),
+});
 
-const todos = (state = [], action) => {
-  switch (action.type) {
-    case actionTypes.ADD:
-      return [
-        ...state,
-        todo(undefined, action),
-      ];
-    case actionTypes.TOGGLE:
-      return state.map(t => todo(t, action));
-    default:
-      return state;
-  }
-};
+const todos = handleActions({
+  [actionTypes.ADD]: (state, action) => ([
+    ...state,
+    todo(undefined, action),
+  ]),
+  [actionTypes.TOGGLE]: (state, action) => state.map(t => todo(t, action)),
+}, []);
 
-const visibilityFilter = (state = 'SHOW_ALL', action) => {
-  switch (action.type) {
-    case actionTypes.SET_VISIBILITY_FILTER:
-      return action.payload;
-    default:
-      return state;
-  }
-};
+const visibilityFilter = handleActions({
+  [actionTypes.SET_VISIBILITY_FILTER]: (state, action) => action.payload.filter,
+}, 'SHOW_ALL');
 
 export default {
   todos,
