@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import Link from 'client/core/components/Link';
 
-const FilterLink = ({
+const TodoFilterLink = ({
   children,
   isActive,
   onClick,
@@ -18,10 +18,10 @@ const FilterLink = ({
   )
 );
 
-FilterLink.propTypes = {
+TodoFilterLink.propTypes = {
   children: PropTypes.node.isRequired,
   isActive: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
 };
 
-export default FilterLink;
+export default TodoFilterLink;

@@ -1,4 +1,4 @@
-exports[`<AddTodo /> renders correctly 1`] = `
+exports[`<TodoAdd /> renders correctly 1`] = `
 <div>
   <form
     onSubmit={[Function anonymous]}>

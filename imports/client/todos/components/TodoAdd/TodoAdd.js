@@ -3,7 +3,7 @@ import { compose, withHandlers } from 'recompose';
 
 let input;
 
-const AddTodo = ({ onSubmit }) => (
+const TodoAdd = ({ onSubmit }) => (
   <div>
     <form onSubmit={onSubmit}>
       <input ref={(node) => { input = node; }} />
@@ -14,7 +14,7 @@ const AddTodo = ({ onSubmit }) => (
   </div>
 );
 
-AddTodo.propTypes = {
+TodoAdd.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };
 
@@ -33,4 +33,4 @@ const enhance = compose(
   }),
 );
 
-export default enhance(AddTodo);
+export default enhance(TodoAdd);

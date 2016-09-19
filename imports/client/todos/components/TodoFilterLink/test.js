@@ -1,26 +1,28 @@
 import React from 'react';
 import { renderCheck } from 'utils/testChecks';
-import FilterLink from './FilterLink';
+import TodoFilterLink from './TodoFilterLink';
 
 const onSubmit = jest.fn();
 
-describe('<FilterLink />', () => {
+describe('<TodoFilterLink />', () => {
   it('renders correctly', () => {
     renderCheck(
-      <FilterLink onClick={onSubmit}>Test</FilterLink>
+      <TodoFilterLink onClick={onSubmit}>
+        Test
+      </TodoFilterLink>
     );
   });
 });
 
-describe('<FilterLink />', () => {
+describe('<TodoFilterLink />', () => {
   it('renders correctly when active', () => {
     renderCheck(
-      <FilterLink
+      <TodoFilterLink
         isActive
         onClick={onSubmit}
       >
         Test
-      </FilterLink>
+      </TodoFilterLink>
     );
   });
 });

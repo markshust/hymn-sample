@@ -1,15 +1,15 @@
-jest.mock('../../containers/FilterLink');
+jest.mock('../../containers/TodoFilterLink');
 
 /* eslint-disable import/imports-first */
 import React from 'react';
 import { renderCheck } from 'utils/testChecks';
-import FilterLinks from './FilterLinks';
+import TodoFilterLinks from './TodoFilterLinks';
 /* eslint-enable import/imports-first */
 
-describe('<FilterLinks />', () => {
+describe('<TodoFilterLinks />', () => {
   it('renders correctly', () => {
     renderCheck(
-      <FilterLinks />
+      <TodoFilterLinks />
     );
   });
 });

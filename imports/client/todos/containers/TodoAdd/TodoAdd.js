@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { todosAdd } from '../../actions';
-import AddTodo from '../../components/AddTodo';
+import TodoAdd from '../../components/TodoAdd';
 
 const mapDispatchToProps = dispatch => ({
   onSubmit: todo => dispatch(todosAdd(todo)),
@@ -9,4 +9,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   () => ({}),
   mapDispatchToProps
-)(AddTodo);
+)(TodoAdd);

@@ -1,6 +1,6 @@
-jest.mock('../../containers/AddTodo');
+jest.mock('../../containers/TodoAdd');
 jest.mock('../../containers/TodoList');
-jest.mock('../../containers/FilterLink');
+jest.mock('../../containers/TodoFilterLink');
 
 /* eslint-disable import/imports-first */
 import React from 'react';

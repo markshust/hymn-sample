@@ -1,13 +1,13 @@
 import React from 'react';
-import AddTodo from '../../containers/AddTodo';
+import TodoAdd from '../../containers/TodoAdd';
 import TodoList from '../../containers/TodoList';
-import FilterLinks from '../FilterLinks';
+import TodoFilterLinks from '../TodoFilterLinks';
 
 const TodoApp = () => (
   <div>
-    <AddTodo />
+    <TodoAdd />
     <TodoList />
-    <FilterLinks />
+    <TodoFilterLinks />
   </div>
 );
 

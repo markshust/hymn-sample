@@ -1,13 +1,13 @@
 import React from 'react';
 import { renderCheck } from 'utils/testChecks';
-import AddTodo from './AddTodo';
+import TodoAdd from './TodoAdd';
 
 const onSubmit = jest.fn();
 
-describe('<AddTodo />', () => {
+describe('<TodoAdd />', () => {
   it('renders correctly', () => {
     renderCheck(
-      <AddTodo onSubmit={onSubmit} />
+      <TodoAdd onSubmit={onSubmit} />
     );
   });
 });
