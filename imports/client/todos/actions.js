@@ -1,5 +1,5 @@
 import { createActions } from 'redux-actions';
-import { ADD, TOGGLE, SET_VISIBILITY_FILTER } from './constants';
+import { ADD, SET_VISIBILITY_FILTER, TOGGLE } from './constants';
 
 let nextTodoId = 0;
 
