@@ -1,4 +1,5 @@
 import React from 'react';
+import Immutable from 'immutable';
 import { compose, createStore } from 'redux';
 import { Provider } from 'react-redux';
 import devTools from 'remote-redux-devtools';
@@ -13,10 +14,14 @@ import welcome from '../welcome';
 const { Home } = home.components;
 const { TodoApp } = todos.components;
 const { Welcome } = welcome.components;
-
+const initialState = Immutable.Map({}); // eslint-disable-line new-cap
 const enhancer = compose(devTools());
-const store = createStore(reducer, {}, enhancer);
-const history = syncHistoryWithStore(browserHistory, store);
+const store = createStore(reducer, initialState, enhancer);
+const history = syncHistoryWithStore(browserHistory, store, {
+  selectLocationState(state) {
+    return state.get('routing').toJS();
+  },
+});
 const routes = (
   <Provider store={store}>
     <Router history={history}>

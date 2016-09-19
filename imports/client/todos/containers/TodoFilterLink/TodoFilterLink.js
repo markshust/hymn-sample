@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 import { todosSetVisibilityFilter } from '../../actions';
 import TodoFilterLink from '../../components/TodoFilterLink';
+import { NAME } from '../../constants';
 
 const mapStateToProps = (state, props) => ({
-  isActive: props.filter === state.todos.visibilityFilter,
+  isActive: props.filter === state.get(NAME).get('visibilityFilter'),
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
