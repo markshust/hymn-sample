@@ -8,11 +8,11 @@ const Dummy = () => (
   <div>{text('Content', 'This is a component')}</div>
 );
 
-stories.add('Text Element', () => (
+stories.add('Text Child', () => (
   <App>{text('Content', 'This is text')}</App>
 ));
 
-stories.add('Component', () => (
+stories.add('Component Child', () => (
   <App>
     <Dummy />
   </App>

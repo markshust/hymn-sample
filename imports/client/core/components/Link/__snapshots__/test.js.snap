@@ -1,0 +1,23 @@
+exports[`<Link /> renders with text 1`] = `
+<a
+  href={undefined}
+  onClick={[Function anonymous]}>
+  Some Text
+</a>
+`;
+
+exports[`<Link /> renders with text and onClick 1`] = `
+<a
+  href={undefined}
+  onClick={[Function anonymous]}>
+  Some Text
+</a>
+`;
+
+exports[`<Link /> renders with text and onClick, id 1`] = `
+<a
+  href={undefined}
+  onClick={[Function anonymous]}>
+  Some Text
+</a>
+`;

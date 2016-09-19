@@ -1,15 +1,11 @@
 import React, { PropTypes } from 'react';
 import { compose, withHandlers } from 'recompose';
-import { connect } from 'react-redux';
-import { todosAdd } from '../actions';
 
 let input;
 
 const AddTodo = ({ onSubmit }) => (
   <div>
-    <form
-      onSubmit={onSubmit}
-    >
+    <form onSubmit={onSubmit}>
       <input ref={(node) => { input = node; }} />
       <button type="submit">
         Add Todo
@@ -23,15 +19,14 @@ AddTodo.propTypes = {
 };
 
 const enhance = compose(
-  connect(),
   withHandlers({
     onSubmit: ({
-      dispatch,
-    }) => (e) => {
-      e.preventDefault();
+      onSubmit,
+    }) => (event) => {
+      event.preventDefault();
 
       if (input.value.trim()) {
-        dispatch(todosAdd(input.value));
+        onSubmit(input.value);
         input.value = '';
       }
     },

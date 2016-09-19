@@ -1,13 +1,13 @@
 import { createActions } from 'redux-actions';
-import * as actionTypes from './actionTypes';
+import { ADD, TOGGLE, SET_VISIBILITY_FILTER } from './constants';
 
 let nextTodoId = 0;
 
 export default createActions({
-  [actionTypes.ADD]: text => ({
+  [ADD]: text => ({
     id: (nextTodoId += 1).toString(),
     text,
   }),
-  [actionTypes.SET_VISIBILITY_FILTER]: filter => ({ filter }),
-  [actionTypes.TOGGLE]: id => ({ id }),
+  [SET_VISIBILITY_FILTER]: filter => ({ filter }),
+  [TOGGLE]: id => ({ id }),
 });

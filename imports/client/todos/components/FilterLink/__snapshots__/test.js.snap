@@ -1,0 +1,13 @@
+exports[`<FilterLink /> renders correctly 1`] = `
+<a
+  href="#"
+  onClick={[Function anonymous]}>
+  Test
+</a>
+`;
+
+exports[`<FilterLink /> renders correctly when active 1`] = `
+<span>
+  Test
+</span>
+`;

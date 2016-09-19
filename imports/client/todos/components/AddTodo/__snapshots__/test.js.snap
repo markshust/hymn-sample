@@ -1,0 +1,12 @@
+exports[`<AddTodo /> renders correctly 1`] = `
+<div>
+  <form
+    onSubmit={[Function anonymous]}>
+    <input />
+    <button
+      type="submit">
+      Add Todo
+    </button>
+  </form>
+</div>
+`;

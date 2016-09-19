@@ -1,0 +1,10 @@
+exports[`<TodoApp /> renders correctly 1`] = `
+<div>
+  <p>
+    Show:
+     
+    , 
+    , 
+  </p>
+</div>
+`;

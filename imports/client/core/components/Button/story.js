@@ -5,7 +5,7 @@ import Button from './Button';
 
 const stories = storiesOf('core/Button', module);
 
-stories.add('Regular Button', () => (
+stories.add('With Label', () => (
   <Button
     label={text('Label', 'My Button')}
     onClick={action('click')}

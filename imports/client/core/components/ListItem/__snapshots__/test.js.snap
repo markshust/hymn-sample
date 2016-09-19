@@ -1,0 +1,35 @@
+exports[`<ListItem /> renders with isStriked 1`] = `
+<li
+  onClick={[Function anonymous]}
+  style={
+    Object {
+      "textDecoration": "line-through"
+    }
+  }>
+  Striked Out
+</li>
+`;
+
+exports[`<ListItem /> renders with text 1`] = `
+<li
+  onClick={[Function anonymous]}
+  style={
+    Object {
+      "textDecoration": "none"
+    }
+  }>
+  Some Text
+</li>
+`;
+
+exports[`<ListItem /> renders with text and onClick 1`] = `
+<li
+  onClick={[Function anonymous]}
+  style={
+    Object {
+      "textDecoration": "none"
+    }
+  }>
+  Some Text
+</li>
+`;

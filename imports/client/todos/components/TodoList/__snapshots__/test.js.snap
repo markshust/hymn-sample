@@ -1,0 +1,24 @@
+exports[`<TodoList /> renders no todos 1`] = `<ul />`;
+
+exports[`<TodoList /> renders with todos 1`] = `
+<ul>
+  <li
+    onClick={[Function anonymous]}
+    style={
+      Object {
+        "textDecoration": "none"
+      }
+    }>
+    item a
+  </li>
+  <li
+    onClick={[Function anonymous]}
+    style={
+      Object {
+        "textDecoration": "line-through"
+      }
+    }>
+    item b
+  </li>
+</ul>
+`;
