@@ -3,7 +3,7 @@ import { todosSetVisibilityFilter } from '../../actions';
 import TodoFilterLink from '../../components/TodoFilterLink';
 
 const mapStateToProps = (state, props) => ({
-  isActive: props.filter === state.visibilityFilter,
+  isActive: props.filter === state.todos.visibilityFilter,
 });
 
 const mapDispatchToProps = (dispatch, props) => ({

@@ -1,6 +1,6 @@
+import { combineReducers } from 'redux';
 import { handleActions } from 'redux-actions';
-import responseState from 'utils/responseState';
-import { ADD, TOGGLE, SET_VISIBILITY_FILTER, SHOW_ACTIVE, SHOW_ALL, SHOW_COMPLETED } from './constants';
+import { ADD, SET_VISIBILITY_FILTER, SHOW_ALL, TOGGLE } from './constants';
 
 const todo = handleActions({
   [ADD]: (state, action) => ({
@@ -30,14 +30,7 @@ const visibilityFilter = handleActions({
   [SET_VISIBILITY_FILTER]: (state, action) => action.payload.filter,
 }, SHOW_ALL);
 
-const getVisibleTodos = (allTodos, state) => responseState({
-  [SHOW_ALL]: () => allTodos,
-  [SHOW_COMPLETED]: () => allTodos.filter(t => t.completed),
-  [SHOW_ACTIVE]: () => allTodos.filter(t => !t.completed),
-}, state);
-
-export default {
-  getVisibleTodos,
+export default combineReducers({
   todos,
   visibilityFilter,
-};
+});

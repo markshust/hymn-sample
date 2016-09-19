@@ -1,8 +1,17 @@
-const module = 'todos';
+const NAME = 'todos';
+const ADD = `${NAME}/ADD`;
+const SET_VISIBILITY_FILTER = `${NAME}/SET_VISIBILITY_FILTER`;
+const SHOW_ACTIVE = `${NAME}/SHOW_ACTIVE`;
+const SHOW_ALL = `${NAME}/SHOW_ALL`;
+const SHOW_COMPLETED = `${NAME}/SHOW_COMPLETED`;
+const TOGGLE = `${NAME}/TOGGLE`;
 
-export const ADD = `${module}/ADD`;
-export const SET_VISIBILITY_FILTER = `${module}/SET_VISIBILITY_FILTER`;
-export const SHOW_ACTIVE = `${module}/SHOW_ACTIVE`;
-export const SHOW_ALL = `${module}/SHOW_ALL`;
-export const SHOW_COMPLETED = `${module}/SHOW_COMPLETED`;
-export const TOGGLE = `${module}/TOGGLE`;
+export default {
+  NAME,
+  ADD,
+  SET_VISIBILITY_FILTER,
+  SHOW_ACTIVE,
+  SHOW_ALL,
+  SHOW_COMPLETED,
+  TOGGLE,
+};
