@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux-immutable';
+import { combineReducers } from 'redux';
 import { handleActions } from 'redux-actions';
 import { ADD, SET_VISIBILITY_FILTER, SHOW_ALL, TOGGLE } from './constants';
 
